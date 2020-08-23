@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+		<title>Movie Search</title>
+		<meta charset="utf-8">
+		
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="reset.css" rel="stylesheet">
+		<link href="style2.css" rel="stylesheet">
+		
+</head>
+
+<header>
+		<h1>Welcome to Andrew Curtis Movie Search</h1>
+		
+</header>
+<body>
+
+		
+		<div class="searchbox">
+			<div>
+				<h1>Let's Find You A Movie!</h1>
+				<input id="title" type="text" name="text" >
+				<button onclick="myFunction()">Find My Movie</button>
+			</div>
+			</div>
+	<br>
+		<div class="searchbox">
+			<h1> Select one of our feature Movies Here</h1>
+				<select id="premovies" >
+				<option value="Star Wars">Star Wars</option>
+				<option value="The Empire Strikes Back">The Empire Strikes Back</option>
+				<option value="Return Of The Jedi">Return Of The Jedi</option>
+				</select>
+			<button onclick="selectMovies()">Best Movies Ever</button>
+		</div>
+
+  
+ <div class="showbox">
+		<img id="poster"></img>
+		<br>
+		<div id="movieTitle"></div>
+		 <br><br>
+		<div id="movieDirector"></div>
+		 <br><br>
+		<div id="moviePlot"></div>
+		 <br><br>
+		<div id="movieActors"></div>
+		 
+		</div>
+			
+			<script src="script.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</body>
+</html>

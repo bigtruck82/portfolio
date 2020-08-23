@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+1.	An input for gross income
+2.	A Dropdown for applying the deduction or not applying the deduction 
+3.	An input to enter a name
+4.	An input to enter a pin number
+5.	A label to display the taxes due
+6.	A button to submit 
+7.	A button to erase/reset all of the inputs/controls
+-->
+
+
+
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet"/>
+   
+    <title>ANDREW'S TAX CALCULATOR</title>
+  </head>
+
+<script src="testcalc.js"></script>
+
+<body>
+
+
+	<div class="navbar"> 
+		
+
+	
+	
+			<ul>
+			
+			<li><a href="taxcal.html"		class="link">TAX CALCULATOR</a></li>
+			</ul>			
+	
+		</div>
+	
+<div class="aboveImage">
+	<h1> Welcome to Andrew's Tax Calaulator! </br></br> Please insert all personal data here. we hope  it works "cross your fingers" thank you!  </h1>
+</div>
+
+
+<div class="taxInput">
+
+	<input type="text" id="name" placeholder="Enter Name"></br>
+	<input type="text" id="pin" placeholder="Enter pin"></br>
+	<input type="number" id="income" placeholder="Enter Income"></br>
+	
+		<select id="deduction" onchange="myFunction()"></br>
+		<option value= yes >standard deduction</option></br>
+		<option value= no  >No standard deduction</option></br>
+		</select>
+			<button id="btnSubmit" onclick="display()">Click for Submit</button>
+			
+</div>
+	
+		
+	<div id="userName"></div>
+	<div id="userPin"></div>
+	<div id="userIncome"></div>
+	<div id="deduction1"></div>
+	<div id="firstBracket"></div>
+	<div id="secondBracket"></div>
+	<div id="thirdBracket"></div>
+	<div id="forthBracket"></div>
+	<div id="fithBracket"></div>
+	<div id="sixBracket"></div>
+	<div id="taxDew"></div>
+	
+	<div id="taxDew"></div>
+	
+	
+	 
+	
+	<button id="btnReset" onclick="refreshPage()">Click for Reset</button>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+
+    <footer>
+		<p>thank you and good luck </p>
+    </footer>
+  </body>
+</html>
